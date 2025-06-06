@@ -6,17 +6,20 @@
   <link rel="icon" type="image/svg+xml" href="/zvezda/assets/logo-DU_A5-Al.webp" />
   <link rel="preload" href="fonts/bona-nova-v11-cyrillic-regular-russian.woff2" as="font" type="font/woff2">
   <link rel="preload" href="fonts/bona-nova-v11-cyrillic-700-russian.woff2" as="font" type="font/woff2">
+  <script src="script.js" defer></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="ЖФК Звезда, женский футбольный клуб, женский футбол, футбольная команда, женский футбол в СПб, пляжный футбол, мини-футбол, футзал, детско-юношеский футбол, тренировки по футболу, футбол для девушек">
+  <meta name="description" content="Официальный сайт ЖФК «Звезда» — женского футбольного клуба, играющего в большой футбол, мини-футбол, футзал и пляжный футбол. Мы развиваем женский футбол через команду, выступающую на Российской и Европейской арене, а также детско-юношескую академию. Присоединяйтесь к нам!">
   <title>Женский футбольный клуб «ЗВЕЗДА»</title>
-  <script type="module" crossorigin src="/zvezda/assets/main-LWbMS2Ir.js"></script>
-  <link rel="modulepreload" crossorigin href="/zvezda/assets/script-CBb9vVap.js">
-  <link rel="stylesheet" crossorigin href="/zvezda/assets/script-BM1Uu3Zn.css">
+  <script type="module" crossorigin src="/zvezda/assets/main-BlwxaXPU.js"></script>
+  <link rel="modulepreload" crossorigin href="/zvezda/assets/index-BD18GgTk.js">
+  <link rel="stylesheet" crossorigin href="/zvezda/assets/index-Ciw_OuNt.css">
   <link rel="stylesheet" crossorigin href="/zvezda/assets/main-Ds_YmOBQ.css">
 </head>
 
 <body class="body">
   <div class="up">
-    <button class="up__button">Наверх ↑</button>
+    <button class="up__button" aria-label="Прокрутить страницу вверх">Наверх ↑</button>
   </div>
 
   <header class="header">
@@ -25,10 +28,10 @@
       <div class="header__logo">
         <img class="header__logo-img" width="50" height="50" src="/zvezda/assets/logo-DU_A5-Al.webp" loading="lazy"
           alt="Логотип женского клуба «Звезда»">
-        <p class="header__logo-title">ЖЕНСКИЙ ФУТБОЛЬНЫЙ КЛУБ «ЗВЕЗДА»</p>
+        <h1 class="header__logo-title">ЖЕНСКИЙ ФУТБОЛЬНЫЙ КЛУБ «ЗВЕЗДА»</h1>
       </div>
 
-      <nav class="header__nav">
+      <nav class="header__nav" aria-label="Основное меню">
         <ul class="header__menu">
           <li class="header__nav-item"><a class="header__nav-link" href="structure.html"
               aria-label="Переход на стриницу состава команды">Состав</a></li>
@@ -85,10 +88,14 @@
 
     <section class="video">
       <div class="container video__container">
-        <iframe class="video__video" src="https://www.youtube.com/embed/Vc7VzmGOYgY" title="Zvezda. Победа в Назаре."
-          frameborder="0" loading="lazy"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe 
+        class="video__video" 
+        src="https://www.youtube.com/embed/Vc7VzmGOYgY" 
+        title="Видео: Победа Zvezda в Euro Winners Cup 2018"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
         <div class="video__info">
           <h2 class="video__title">Euro Winners Cup 2018</h2>
           <p class="video__text">Эта победа&nbsp;&mdash; навсегда! Делимся эмоциями, трудностями и&nbsp;радостью,
@@ -113,9 +120,9 @@
         <ul class="about__list">
           <li class="about__item about__item-beach">
             <figure class="about__figure">
-              <img src="/zvezda/assets/beach-DZ2Pa_nj.webp" loading="lazy" alt="Картинка, где дувушки играют в пляжный футбол"
+              <img src="/zvezda/assets/beach-DZ2Pa_nj.webp" loading="lazy" alt="Девушки играют в пляжный футбол"
                 class="about__img">
-              <figcaption class="about__figraption">
+              <figcaption class="about__figcaption">
                 <h3 class="about__subtitle">Пляжный футбол</h3>
                 <p class="about__text">Смех, песок, драма и&nbsp;куча падений. Здесь каждый гол&nbsp;&mdash; как
                   диагноз: или гениально, или &quot;как это вообще произошло?&quot;</p>
@@ -124,8 +131,8 @@
           </li>
           <li class="about__item about__item-futsal">
             <figure class="about__figure">
-              <img src="/zvezda/assets/futsal-BoHHBmeg.webp" loading="lazy" alt="Картинка, где дувушки играют в футзал" class="about__img">
-              <figcaption class="about__figraption">
+              <img src="/zvezda/assets/futsal-BoHHBmeg.webp" loading="lazy" alt="Девушки играют в футзал" class="about__img">
+              <figcaption class="about__figcaption">
                 <h3 class="about__subtitle">Футзал (5х5)</h3>
                 <p class="about__text">Быстро, умно, с&nbsp;кучей неожиданных поворотов. Здесь нет времени
                   на&nbsp;раскачку&nbsp;&mdash; только молниеносные решения и&nbsp;гениальные комбинации!</p>
@@ -134,9 +141,9 @@
           </li>
           <li class="about__item about__item-classic">
             <figure class="about__figure">
-              <img src="/zvezda/assets/classic-i8YQZn2h.webp" loading="lazy" alt="Картинка, где дувушки играют в классический футбол"
+              <img src="/zvezda/assets/classic-i8YQZn2h.webp" loading="lazy" alt="Девушки играют в классический футбол"
                 class="about__img">
-              <figcaption class="about__figraption">
+              <figcaption class="about__figcaption">
                 <h3 class="about__subtitle">Классика (11х11)</h3>
                 <p class="about__text">Долгие стратегические битвы, героические подвиги и&nbsp;90&nbsp;минут интриг.
                   Главный трон&nbsp;&mdash; кубок чемпионата!</p>
@@ -145,9 +152,9 @@
           </li>
           <li class="about__item about__item-mini">
             <figure class="about__figure">
-              <img src="/zvezda/assets/mini-D9ysW0HU.webp" loading="lazy" alt="Картинка, где дувушки играют в мини-футбол футбол"
+              <img src="/zvezda/assets/mini-D9ysW0HU.webp" loading="lazy" alt="Девушки играют в мини-футбол футбол"
                 class="about__img">
-              <figcaption class="about__figraption">
+              <figcaption class="about__figcaption">
                 <h3 class="about__subtitle">Мини-футбол (7х7)</h3>
                 <p class="about__text">Плотная оборона, неожиданные контратаки и&nbsp;головокружительные трюки. Каждый
                   матч&nbsp;&mdash; как спецоперация: нужно быть быстрее, умнее и&nbsp;хитрее!</p>
@@ -225,7 +232,8 @@
             <a class="news__button" href="#" aria-label="Читать подробнее о новости">Читать подробнее</a>
           </li>
           <li class="news__item news__item-news2">
-            <p class="news__text news__text-news2">⭐️ Молодежный состав &laquo;Звезды&raquo; выступил менее удачно, чем годом ранее,
+            <p class="news__text news__text-news2">⭐️ Молодежный состав &laquo;Звезды&raquo; выступил менее удачно, чем
+              годом ранее,
               но&nbsp;основная задача была на&nbsp;турнир&nbsp;&mdash; получить сопротивление от&nbsp;более опытных
               команд.<br>
               &laquo;Звезда-м&raquo;&nbsp;&mdash; самый молодой коллектив в&nbsp;истории лиги. Средний возраст:
@@ -263,7 +271,8 @@
               🎖 В&nbsp;матче за&nbsp;третье место сыграют &laquo;Звезда красные&raquo; и&nbsp;сборная Санкт-Петербурга.
               Последняя встреча между этими командами также носила бронзовый статус. И&nbsp;тоже кубковый,
               но&nbsp;правда в&nbsp;закрытых помещениях. Тогда &laquo;красно-черные&raquo; выиграли, ограничившись двумя
-              забитыми мячами. Стоит&nbsp;ли ждать от&nbsp;уличного матча большей результативности? Узнаем совсем скоро.<br>
+              забитыми мячами. Стоит&nbsp;ли ждать от&nbsp;уличного матча большей результативности? Узнаем совсем
+              скоро.<br>
               🎖 В&nbsp;финальной игре&nbsp;&mdash; знакомые все лица! Россыпь многократных чемпионок страны, игроков
               национальной сборной. Все они соберутся в&nbsp;этот вечер на&nbsp;стадионе NOVA ARENA в&nbsp;составах
               обеих команд, чтобы подарить нам настоящее зрелище. Многие игроки противостояли друг другу в&nbsp;рамках
@@ -311,18 +320,18 @@
         <ul class="footer__contacts-list">
           <li class="footer__contacts-item">
             <a class="footer__contacts-link footer__contacts-browser" href="https://fczvezda.com" target="_blank"
-              aria-label="Официальный сайт клуба «ЗВЕЗДА»">
+              aria-label="Официальный сайт клуба «ЗВЕЗДА»" title="Официальный сайт клуба «ЗВЕЗДА»">
             </a>
           </li>
 
           <li class="footer__contacts-item">
             <a class="footer__contacts-link footer__contacts-telegram" href="https://t.me/bsczvezda" target="_blank"
-              aria-label="Телеграмм канал женского клуба «ЗВЕЗДА»"> </a>
+              aria-label="Телеграмм канал женского клуба «ЗВЕЗДА»" title="Телеграмм канал женского клуба «ЗВЕЗДА»"> </a>
           </li>
 
           <li class="footer__contacts-item">
             <a class="footer__contacts-link footer__contacts-vk" href="https://vk.com/club_wfc_zvezda?from=groups"
-              target="_blank" aria-label="Сообщество в vk женского клуба «ЗВЕЗДА»">
+              target="_blank" aria-label="Сообщество в vk женского клуба «ЗВЕЗДА»" title="Сообщество в vk женского клуба «ЗВЕЗДА»">
 
             </a>
           </li>
